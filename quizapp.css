@@ -1,0 +1,140 @@
+/* -------------------------Global------------------------------ */
+
+html {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+}
+
+body {
+  background-color: rgb(241, 236, 230) !important;
+  margin-top: 50px;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.bg-success,
+.bg-danger {
+  color: white !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-100vw {
+  width: 100vw;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* -------------------------Navbar------------------------------------- */
+
+.menu:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav {
+  gap: 8px;
+}
+
+.navbar-img {
+  height: 32px;
+}
+
+/* -------------------------Main Container------------------------------ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(241, 236, 230) !important;
+  min-height: 90vh;
+}
+
+/* -------------------------Justify-Content-Space-Between------------------------------ */
+
+.justify-content-space-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+/* -------------------------Quiz Card------------------------------ */
+
+.quiz-card {
+  background-color: white;
+  width: 30rem;
+}
+
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+.quiz-answer-card:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding-top: 12px;
+}
+
+.final-headline {
+  font-size: 38px;
+  margin-bottom: 32px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* -------------------------Media Query------------------------------ */
+
+@media (max-width: 500px) {
+  .container,
+  .container-sm {
+    max-width: 400px;
+  }
+
+  .card-img-top {
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 400px) {
+  .container,
+  .container-sm {
+    max-width: 350px;
+  }
+
+  .card-img-top {
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  .container,
+  .container-sm {
+    max-width: 320px;
+  }
+
+  .card-img-top {
+    height: 240px;
+    object-fit: cover;
+  }
+}
